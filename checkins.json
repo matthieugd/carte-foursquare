@@ -1,0 +1,20 @@
+{
+	"count":1,
+	"items":[
+		{
+			"id":"630baade3671487784dfb794",
+			"createdAt":1661709022,
+			"type":"checkin",
+			"timeZoneOffset":-240,
+			"venue":
+			{
+				"id":"5cddc985b9a5a8002c0b0173",
+				"name":"Ripples",
+				"url":"https:\/\/foursquare.com\/v\/ripples\/5cddc985b9a5a8002c0b0173"},
+				"comments":
+				{
+					"count":0
+				}
+			}
+	]
+}

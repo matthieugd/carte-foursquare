@@ -1,0 +1,17 @@
+body { 
+	font-family: '-apple-system','HelveticaNeue',Helvetica, Arial, Sans-Serif; 
+	font-size:17;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 2318px;
+  /* The height is 400 pixels */
+  width: 3000px;
+  /* The width is the width of the web page */
+}
+
+#venueContent {
+	margin: 10px;
+	max-height: 200px;
+}

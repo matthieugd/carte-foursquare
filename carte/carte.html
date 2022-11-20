@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Archive des checkins Foursquare</title>
+	<script>
+		HTMLCanvasElement.prototype.getContext = function(origFn) {
+		  return function(type, attribs) {
+		    attribs = attribs || {};
+		    attribs.preserveDrawingBuffer = true;
+		    return origFn.call(this, type, attribs);
+		  };
+		}(HTMLCanvasElement.prototype.getContext);
+	</script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	  <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+	  <script type="module" src="./html2canvas.min.js"></script>
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <h1>Archive des checkins Foursquare</h1>
+	<!-- use for dev<input id="localfileinput" onchange="loadData(this)" type="file"> -->
+	<input type="checkbox" id="venuesVisibility" checked="true" onclick="toggleVenuesDisplay()"/>
+	<button type="button" onclick="convertasbinaryimage()">export</button>
+  <button type="button" onclick="convertasvgimage()">export svg</button>
+    <div id="map"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=[YOUR API KEY]&callback=initMap&v=beta"
+      defer
+    ></script>
+	 <img id="googlemapbinary" src="" />
+  </body>
+  </html>
